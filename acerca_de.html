@@ -13,69 +13,60 @@
 </head>
 
 <body>
-	<div class="contenedor">
+	<div class="container-lg">
 		<header class="barra-superior">
-			<div class="logos">
-				<a class="logo-sitio" href="./index.html">
-					<img class="logo" src="./img/logo.png" alt="CoderFolio" />
-				</a>
-			</div>
-			<nav class="menu-navegacion">
-				<ul class="menu-lista">
-					<li class="menu-item">
-						<a href="./index.html">Inicio</a>
-					</li>
-					<li class="menu-item activo">
-						<a href="./acerca_de.html">Acerca de</a>
-					</li>
-					<li class="menu-item">
-						<a href="./portfolio.html">Portfolio</a>
-					</li>
-					<li class="menu-item">
-						<a href="./contacto.html">Contacto</a>
-					</li>
-				</ul>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="./index.html">
+						<img src="./img/logo.png" alt="CoderFolio" class="my-3" />
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-desplegable">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="menu-desplegable">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="./acerca_de.html">Acerca de</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./portfolio.html">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 
-		<main class="acerca-de">
-			<div class="columnitas">
-				<section class="mitad">
-					<img class="equipo" src="./img/imagenes/acerca-de.jpg" alt="El Equipo">
-				</section>
-				<section class="mitad">
-					<article class="textos">
-						<div class="encabezado">
-							<h2>
-								Somos un equipo de diseñadores de espacios
-							</h2>
-						</div>
+		<main>
+			<div class="container">
+				<div class="row gx-5 align-items-center mt-3">
+					<div class="col-12 col-lg-6">
+						<img class="img-fluid" src="./img/imagenes/acerca-de.jpg" alt="El Equipo" />
+					</div>
+					<div class="col">
+						<h2 class="fs-1 pt-5 pt-lg-0 pb-3">
+							Somos un equipo de diseñadores de espacios
+						</h2>
 						<p>Creamos espacios agradables para todos los gustos. Nos gusta conocerte primero para presentarte una propuesta única e irrepetible. Somos apasionados por las energías renovables y los espacios auto-sustentables para nuestros proyectos.</p>
-						<div class="columnitas">
-							<div class="tercio">
-								<ul class="lista-negra">
-									<li>Cocinas</li>
-									<li>Jardines</li>
-								</ul>
-							</div> 
-							<div class="tercio">
-								<ul class="lista-negra">
-									<li>Livings</li>
-									<li>Oficinas</li>
-								</ul>
-							</div> 
-							<div class="tercio">
-								<ul class="lista-negra">
-									<li>Habitaciones</li>
-									<li>Terrazas</li>
-								</ul>
-							</div> 
-						</div>
+						<ul class="lista-negra row row-cols-2 row-cols-md-3">
+							<li>Cocinas</li>
+							<li>Jardines</li>
+							<li>Livings</li>
+							<li>Oficinas</li>
+							<li>Habitaciones</li>
+							<li>Terrazas</li>
+						</ul>
 						<div class="botones">
-							<a href="./contacto.html" class="boton">CONTACTANOS</a>
+							<a href="./contacto.html" class="btn btn-dark">CONTACTANOS</a>
 						</div>
-					</article>
-				</section>
+					</div>
+				</div>
 			</div>
 		</main>
 

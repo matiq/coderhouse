@@ -13,71 +13,74 @@
 </head>
 
 <body>
-	<div class="contenedor">
+	<div class="container-lg">
 		<header class="barra-superior">
-			<div class="logos">
-				<a class="logo-sitio" href="./index.html">
-					<img class="logo" src="./img/logo.png" alt="CoderFolio" />
-				</a>
-			</div>
-			<nav class="menu-navegacion">
-				<ul class="menu-lista">
-					<li class="menu-item">
-						<a href="./index.html">Inicio</a>
-					</li>
-					<li class="menu-item">
-						<a href="./acerca_de.html">Acerca de</a>
-					</li>
-					<li class="menu-item activo">
-						<a href="./portfolio.html">Portfolio</a>
-					</li>
-					<li class="menu-item">
-						<a href="./contacto.html">Contacto</a>
-					</li>
-				</ul>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="./index.html">
+						<img src="./img/logo.png" alt="CoderFolio" class="my-3" />
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-desplegable">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="menu-desplegable">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./acerca_de.html">Acerca de</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="./portfolio.html">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 
-		<main class="portfolio-item">
-			<div class="columnitas">
-				<section class="tercio">
-					<article class="textos">
-						<div class="encabezado">
-							<h2>Rediseño Zen</h2>
-						</div>
-						<div class="subtitulo">BAÑO</div>
-						<p class="descripcion">
+		<main class="pt-5">
+			<div class="row">
+				<section class="col-12 col-lg-4">
+					<article>
+						<h2 class="fs-1 py-0">Rediseño Zen</h2>
+						<h3 class="fs-5 pt-0 pb-3 fw-normal">BAÑO</h3>
+						<p class="lh-base">
 							Realizamos el rediseño de este espacio, que tenía divisiones innecesarioas y cambiamos los colores, para darle aires de limpieza y relax que se acomodaran al resto de la casa.
 							<br>
 							Además se realizó la subcontratación de empresas para llevar a cabo la obra, dejando al cliente el trabajo 100% realizado.
 						</p>
 
-						<h4>Servicios</h4>
-						<p class="descripcion">Diseño y Cálculo</p>
+						<h4 class="fs-5 pt-1 pb-0 text-dark">Servicios</h4>
+						<p class="lh-base">Diseño y Cálculo</p>
 
-						<h4>Adicionales</h4>
-						<p class="descripcion">Subcontratación</p>
+						<h4 class="fs-5 pt-1 pb-0 text-dark">Adicionales</h4>
+						<p class="lh-base">Subcontratación</p>
 
-						<h4>¿Querés saber más?</h4>
-						<p class="descripcion">Nos encantaría charlar con vos..</p>
-						<a href="./contacto.html" class="boton">¡Escribínos!</a>
+						<h4 class="fs-5 pt-1 pb-0 text-dark">¿Querés saber más?</h4>
+						<p class="lh-base">Nos encantaría charlar con vos..</p>
+						<a href="./contacto.html" class="btn btn-dark my-2">¡Escribínos!</a>
 					</article>
 				</section>
 
 				
-				<section class="dobletercio">
-					<div class="esp">
-						<img class="equipo" src="./img/imagenes/diseno-00.jpg" alt="Diseño de Baño">
-					</div>
-					<div class="columnitas">
-						<div class="tercio esp">
-							<img class="equipo" src="./img/imagenes/diseno-01.jpg" alt="Diseño de Baño">
+				<section class="col-12 col-lg-8 mt-5 mt-lg-0">
+					<div class="row">
+						<div class="col-12">
+							<img class="img-fluid" src="./img/imagenes/diseno-00.jpg" alt="Diseño de Baño">
+						</div>
+						<div class="col-12 col-md-4 mt-4">
+							<img class="img-fluid" src="./img/imagenes/diseno-01.jpg" alt="Diseño de Baño">
 						</div> 
-						<div class="tercio esp">
-							<img class="equipo" src="./img/imagenes/diseno-02.jpg" alt="Diseño de Baño">
+						<div class="col-12 col-md-4 mt-4">
+							<img class="img-fluid" src="./img/imagenes/diseno-02.jpg" alt="Diseño de Baño">
 						</div> 
-						<div class="tercio esp">
-							<img class="equipo" src="./img/imagenes/diseno-03.jpg" alt="Diseño de Baño">
+						<div class="col-12 col-md-4 mt-4">
+							<img class="img-fluid" src="./img/imagenes/diseno-03.jpg" alt="Diseño de Baño">
 						</div> 
 					</div>
 				</section>

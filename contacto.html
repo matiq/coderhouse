@@ -13,74 +13,82 @@
 </head>
 
 <body>
-	<div class="contenedor">
+	<div class="container-lg">
 		<header class="barra-superior">
-			<div class="logos">
-				<a class="logo-sitio" href="./index.html">
-					<img class="logo" src="./img/logo.png" alt="CoderFolio" />
-				</a>
-			</div>
-			<nav class="menu-navegacion">
-				<ul class="menu-lista">
-					<li class="menu-item">
-						<a href="./index.html">Inicio</a>
-					</li>
-					<li class="menu-item">
-						<a href="./acerca_de.html">Acerca de</a>
-					</li>
-					<li class="menu-item">
-						<a href="./portfolio.html">Portfolio</a>
-					</li>
-					<li class="menu-item activo">
-						<a href="./contacto.html">Contacto</a>
-					</li>
-				</ul>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="./index.html">
+						<img src="./img/logo.png" alt="CoderFolio" class="my-3" />
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-desplegable">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="menu-desplegable">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./acerca_de.html">Acerca de</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./portfolio.html">Portfolio</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="./contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 
-		<main class="contacto">
+		<main>
+			<h2 class="fs-1 py-5 pe-5">
+				¿Te interesa ponerte en contacto con nosotros? ¡Estamos ansiosos por escucharte!
+			</h2>
 			<div class="encabezado">
 				<h2>
-					¿Te interesa ponerte en contacto con nosotros? ¡Estamos ansiosos por escucharte!
+					
 				</h2>
 			</div>
 
-			<div class="columnitas medios">
-				<div class="tercio">
+			<div class="row medios text-center me-5">
+				<div class="col">
 					<img src="./img/iconos/celular.png" alt="Teléfono"> 
 					<h6>(11) 2345 6789</h6>
 				</div> 
-				<div class="tercio">
+				<div class="col">
 					<img src="./img/iconos/correo.png" alt="E-mail"> 
 					<h6>hola@coderfolio.ar</h6>
 				</div> 
-				<div class="tercio">
+				<div class="col">
 					<img src="./img/iconos/mapa.png" alt="Dirección"> 
 					<h6>Cerrito 330 (CABA)</h6>
 				</div> 
 			</div>
 
-			<form class="formulario-contacto">
-				<div class="columnitas">
-					<div class="tercio esp">
-						<input type="text" name="nombre" class="input-texto" placeholder="Nombre">
+			<form class="formulario-contacto mt-5">
+				<div class="row">
+					<div class="col-12 col-lg-4 mb-4">
+						<input class="form-control" type="text" name="nombre" class="input-texto" placeholder="Nombre">
 					</div>
-					<div class="tercio esp">
-						<input type="email" name="email" class="input-texto" placeholder="E-mail">
+					<div class="col-12 col-lg-4 mb-4">
+						<input class="form-control" type="email" name="email" class="input-texto" placeholder="E-mail">
 					</div>
-					<div class="tercio esp">
-						<input type="text" name="asunto" class="input-texto" placeholder="Asunto">
+					<div class="col-12 col-lg-4 mb-4">
+						<input class="form-control" type="text" name="asunto" class="input-texto" placeholder="Asunto">
+					</div>
+					<div class="col-12 mb-4">
+						<textarea class="form-control" name="mensaje" cols="40" rows="10" class="input-mensaje" placeholder="Mensaje"></textarea>
 					</div>
 				</div>
-				<div class="esp">
-					<textarea name="mensaje" cols="40" rows="10" class="input-mensaje" placeholder="Mensaje"></textarea>
-				</div>
-				<div class="esp">
-					<input type="submit" value="ENVIAR MENSAJE" class="boton enviar">
+				<div class="text-center">
+					<input type="submit" value="ENVIAR MENSAJE" class="btn btn-dark mb-4">
 				</div>
 			</form>
 
-			<iframe class="mapa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.39129328727723%2C-34.608398189745124%2C-58.373376131057746%2C-34.60060940983929&amp;layer=mapnik&amp;marker=-34.60450389111019%2C-58.38233470916748" title="Mapa"></iframe>
+			<iframe class="contacto-mapa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.39129328727723%2C-34.608398189745124%2C-58.373376131057746%2C-34.60060940983929&amp;layer=mapnik&amp;marker=-34.60450389111019%2C-58.38233470916748" title="Mapa"></iframe>
 		</main>
 
 		<footer class="pie-de-pagina">

@@ -1,14 +1,11 @@
-* {
-	box-sizing:border-box;
-}
+/* estilos globales */
 body {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
   color: #707070;
 	font-family: 'Roboto', sans-serif;
 }
-
 a {
   color: #151515;
   text-decoration: none;
@@ -17,238 +14,44 @@ a:hover {
   color: #707070;
   text-decoration: none;
 }
-img {
-	width: 100%;
+h1, h2 {
+	color: #151515;
 }
-
-.columnitas {
-	width:100%;
-	display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-	align-items: flex-start;
-}
-.mitad {
-	flex-basis: 45%;
-	flex-grow: 1;
-}
-.tercio {
-	flex-basis: 30%;
-	flex-grow: 1;
-}
-.dobletercio {
-	flex-basis: 30%;
-	flex-grow: 2;
-}
-.esp {
-	padding: 10px;
-}
-
-.boton {
-	background-color: #151515;
-	color: #fff;
+.btn.btn-dark {
+	border-radius: 0;
 	font-size: 12px;
 	font-weight: 500;
-	padding: 12px 24px;
+	padding: 14px 26px;
 	letter-spacing: 1px;
-	display: inline-block;
-	border: 2px solid #151515;
-}
-.boton:hover {
-  opacity: .9;
-	color: #fff;
 }
 
-.contenedor {
-	max-width: 1100px;
-	padding: 15px;
-	margin: 0 auto;
-}
-
-header.barra-superior {
-	position: relative;
-	height: 80px;
-	line-height: 1;
-}
-header.barra-superior .logos, header.barra-superior .menu-navegacion {
-	position: absolute;
-	top: 15px;
-}
-header.barra-superior .logos {
-	left:0;
-}
-header.barra-superior .logos img {
+/* barra superior */
+.navbar-brand img {
 	height: 50px;
 }
-header.barra-superior .menu-navegacion {
-	right: 0;
-}
-
-ul.menu-lista {
-	list-style-type: none;
-	margin: 0;
-}
-ul.menu-lista li {
-	display: inline-block;
-}
-ul.menu-lista li a {
+.barra-superior .nav-item a {
 	font-size: 12px;
 	letter-spacing: .4px;
 	font-weight: 500;
 	text-transform: uppercase;
-	text-decoration: none;
-	display: inline-block;
 	height: 50px;
-	padding: 0 20px;
 	line-height: 50px;
+	color: #151515;
 }
-ul.menu-lista li.activo a {
+.barra-superior .nav-item a:hover {
+    color: #707070;
+    text-decoration: none;
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding: 0 20px;
+	}
+}
+.barra-superior .nav-item a.active {
 	border: 2px solid #bbbbbb;
 }
 
-.principal .encabezado, .contacto .encabezado, .portfolio .encabezado {
-	margin: 70px 0 50px 0;
-}
-.encabezado h2 {
-	font-size: 44px;
-	line-height: 59px;
-	font-weight: 500;
-	color: #151515;
-	margin: 0 0 20px 0;
-}
-.principal .grilla, .portfolio .grilla {
-	width: 100%;
-	display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.principal .grilla .grilla-item, .portfolio .grilla .grilla-item {
-	position: relative;
-	flex-basis: 30%;
-	flex-grow: 1;
-}
-.principal .grilla .grilla-item a, .portfolio .grilla .grilla-item a {
-	display: block;
-	padding: 0 15px 15px 0;
-}	
-.principal .grilla .grilla-item .textos, .portfolio .grilla .grilla-item .textos {
-	position: absolute;
-	padding: 10px 30px 10px 10px;
-	left: -5px;
-	top: auto;
-	bottom: 35px;
-	background-color: #1d1d1d;
-}	
-.principal .grilla .grilla-item .textos .titulo, .portfolio .grilla .grilla-item .textos .titulo {
-	color: #ffffff;
-	font-size: 16px;
-	line-height: 1.9;
-}
-.principal .grilla .grilla-item .textos .subtitulo, .portfolio .grilla .grilla-item .textos .subtitulo {
-color: rgba(255, 255, 255, 0.7);
-	font-size: 13px;
-}
-
-.acerca-de {
-	margin-top: 50px;
-}
-.acerca-de .textos {
-	margin-left: 50px;
-}
-.acerca-de .textos .encabezado h2 {
-	line-height: 54px;
-}
-.acerca-de .textos .lista-negra {
-	color: #151515;
-	font-weight: 500;
-	padding-left: 10px;
-}
-.acerca-de .textos .lista-negra li {
-	list-style-type: '■';
-  padding-inline-start: 10px;
-	font-size: 16px;
-}
-.acerca-de .textos p {
-	font-size: 16px;
-	line-height: 26px;
-	font-weight: 400;
-}
-.acerca-de .textos .botones {
-	margin-top: 20px;
-}
-
-.contacto .medios {
-	text-align: center;
-	margin-bottom: 50px;
-}
-.contacto .medios img {
-	width: revert;
-	max-width: 36px;
-	margin-bottom: 15px;
-}
-.contacto .medios h6 {
-	font-size: 16px;
-	font-weight: 400;
-	margin-bottom: 7px;
-	color: #151515;
-	line-height: 1.4;
-	margin: 0 0 20px;
-}
-.contacto .formulario-contacto .input-texto, .contacto .formulario-contacto .input-mensaje {
-	background-color: #fafafa;
-	color: #151515;
-	border: 1px solid #e6e6e6;
-	display: block;
-	padding: 12px 15px;
-	width: 100%;
-	font-size: 15px;
-	line-height: 1.15;
-	margin-bottom: 10px;
-}
-.contacto .formulario-contacto .enviar {
-	display: block;
-	margin: 0 auto;
-}
-.contacto .mapa {
-	margin: 40px 0;
-	border: 0;
-	width: 100%;
-	height: 400px;
-}
-
-.portfolio-item {
-	margin-top: 70px;
-}
-.portfolio-item .tercio {
-	vertical-align: top;
-}
-.portfolio-item .textos {
-	padding-right: 50px;
-}
-.portfolio-item .encabezado h2 {
-	font-size: 38px;
-	line-height: 44px;
-	font-weight: 500;
-	margin-bottom: 2px;
-}
-.portfolio-item .subtitulo {
-	font-size: 20px;
-	font-weight: 400;
-	color: #505050;
-}
-.portfolio-item .descripcion {
-	font-size: 15px;
-	line-height: 25px;
-	font-weight: 400;
-}
-.portfolio-item h4 {
-	font-size: 17px;
-	font-weight: 500;
-	color: #151515;
-	display: block;
-	margin: 20px 0 -15px 0;
-}
-
+/* pie de pagina */
 .pie-de-pagina .creador {
 	padding: 35px 0;
 }
@@ -257,4 +60,66 @@ color: rgba(255, 255, 255, 0.7);
 	font-size: 13px;
 	font-weight: 400;
 	margin-bottom: 0;
+}
+
+/* posicionamiento label en grillas */
+.grilla .grilla-item {
+	position: relative;
+}
+.grilla .grilla-item .textos {
+	position: absolute;
+	padding: 10px 30px 10px 10px;
+	left: -5px;
+	bottom: 35px;
+	background-color: #1d1d1d;
+}	
+.grilla .grilla-item .textos .titulo {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 1.9;
+}
+.grilla .grilla-item .textos .subtitulo {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 13px;
+}
+
+/* ul personalizados */
+.lista-negra {
+	color: #151515;
+	font-weight: 500;
+	padding-inline-start: 12px;
+}
+.lista-negra li {
+	list-style-type: '■ ';
+  list-style-position: inside;
+	font-size: 16px;
+	padding: 0;
+}
+
+/* pagina de contacto */
+.medios img {
+	width: revert;
+	max-width: 36px;
+	margin-bottom: 15px;
+}
+.medios h6 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 0 0 20px;
+}
+.formulario-contacto .form-control {
+	background-color: #fafafa;
+	color: #151515;
+	border: 1px solid #e6e6e6;
+	padding: 12px 15px;
+	font-size: 15px;
+	line-height: 1.15;
+	border-radius: 0;
+}
+.contacto-mapa {
+	margin: 40px 0;
+	border: 0;
+	width: 100%;
+	height: 400px;
 }
