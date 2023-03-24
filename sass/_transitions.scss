@@ -1,0 +1,15 @@
+.grilla {
+	.grilla-item {
+		.textos {
+			transition: all 0.5s;
+			transition-timing-function: ease-out;
+		}
+	}
+	.grilla-item:hover {
+		.textos {
+			width: calc(100% + 10px);
+			text-align: center;
+			padding-right: 10px;
+		}
+	}
+}

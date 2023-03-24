@@ -1,0 +1,7 @@
+/* pie de pagina */
+.pie-de-pagina .creador {
+	@include fuente(13px, 400, 1.2);
+	color: $mainColor;
+	padding: 35px 0;
+	margin-bottom: 0;
+}

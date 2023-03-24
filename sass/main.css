@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* barra superior */
+.barra-superior .navbar-brand img {
+  height: 50px;
+}
+.barra-superior .navbar-toggler {
+  border: 2px solid #707070;
+  border-radius: 0;
+}
+.barra-superior .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.barra-superior .nav-item a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 50px;
+  color: #151515;
+}
+.barra-superior .nav-item a:hover {
+  color: #707070;
+  text-decoration: none;
+}
+.barra-superior .nav-item a.active {
+  border: 2px solid #707070;
+}
+
+/* pie de pagina */
+.pie-de-pagina .creador {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #707070;
+  padding: 35px 0;
+  margin-bottom: 0;
+}
+
+/* pagina de contacto */
+.medios img {
+  width: revert;
+  max-width: 36px;
+  margin-bottom: 15px;
+}
+.medios h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+
+.formulario-contacto .form-control {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.15;
+  background-color: #fafafa;
+  color: #151515;
+  border: 1px solid #e6e6e6;
+  padding: 12px 15px;
+  border-radius: 0;
+}
+
+.contacto-mapa {
+  margin: 40px 0;
+  border: 0;
+  width: 100%;
+  height: 400px;
+}
+
+.ico-celu {
+  background-image: "img/iconos/celular.png";
+}
+
+.ico-corr {
+  background-image: "img/iconos/correo.png";
+}
+
+.ico-mapa {
+  background-image: "img/iconos/mapa.png";
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+  }
+}
+.grilla .grilla-item .textos {
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+.grilla .grilla-item:hover .textos {
+  width: calc(100% + 10px);
+  text-align: center;
+  padding-right: 10px;
+}
+
+/* estilos globales */
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #151515;
+  text-decoration: none;
+}
+a:hover {
+  color: #707070;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #151515;
+}
+
+.btn.btn-dark {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 14px 26px;
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+
+/* posicionamiento label en grillas */
+.grilla .grilla-item {
+  position: relative;
+}
+.grilla .grilla-item .textos {
+  position: absolute;
+  padding: 10px 30px 10px 10px;
+  left: -5px;
+  bottom: 35px;
+  background-color: #151515;
+  width: 70%;
+}
+.grilla .grilla-item .textos .titulo {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.grilla .grilla-item .textos .subtitulo {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+/* ul personalizados */
+.lista-negra {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  -webkit-padding-start: 12px;
+          padding-inline-start: 12px;
+}
+.lista-negra li {
+  list-style-type: "■ ";
+  list-style-position: inside;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

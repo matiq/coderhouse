@@ -1,0 +1,34 @@
+/* pagina de contacto */
+.medios {
+	img {
+		width: revert;
+		max-width: 36px;
+		margin-bottom: 15px;
+	}
+	h6 {
+		@include fuente(16px, 400, 1.4);
+		margin: 0 0 20px;
+	}
+}
+.formulario-contacto {
+	.form-control {
+		@include fuente(15px, 400, 1.15);
+		background-color: $formBackColor;
+		color: $darkColor;
+		border: 1px solid $formBorderColor;
+		padding: 12px 15px;
+		border-radius: 0;
+	}
+}
+.contacto-mapa {
+	margin: 40px 0;
+	border: 0;
+	width: 100%;
+	height: 400px;
+}
+
+@each $icono, $imagen in $img-iconos {
+	.ico-#{$icono} {
+		background-image: $imagen;
+	}
+}
