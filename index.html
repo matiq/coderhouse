@@ -48,6 +48,59 @@
 
 
 		<main>
+			<!-- Slider de imagenes -->
+			<div id="sliderPrincipal" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+				<!-- Indicadores -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#sliderPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quienes somos"></button>
+					<button type="button" data-bs-target="#sliderPrincipal" data-bs-slide-to="1" aria-label="Portfolio"></button>
+					<button type="button" data-bs-target="#sliderPrincipal" data-bs-slide-to="2" aria-label="Contacto"></button>
+				</div>
+
+				<!-- Items -->
+				<div class="carousel-inner">
+					<!-- item -->
+					<div class="carousel-item active" data-bs-interval="3000">
+						<img src="img/imagenes/slides/quienes.jpg" class="d-block w-100" alt="Quienes somos" />
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Descubrí nuestro equipo</h5>
+							<p>Somos una empresa que se emociona con cada proyecto...</p>
+						</div>
+					</div>
+
+					<!-- item -->
+					<div class="carousel-item" data-bs-interval="3000">
+						<img src="img/imagenes/slides/portfolio.jpg" class="d-block w-100" alt="Portfolio" />
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Mirá nuestros trabajos</h5>
+							<p>Tenemos un gran portfolio de trabajos realizados...</p>
+						</div>
+					</div>
+
+					<!-- item -->
+					<div class="carousel-item" data-bs-interval="3000">
+						<img src="img/imagenes/slides/contacto.jpg" class="d-block w-100" alt="Contacto" />
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Queremos escucharte</h5>
+							<p>Ponete en contacto con nosotros, estamos ansiosos!</p>
+						</div>
+					</div>
+				</div>
+				<!-- Items -->
+
+				<!-- Controles -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#sliderPrincipal" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Anterior</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#sliderPrincipal" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Siguiente</span>
+				</button>
+			</div>
+			<!-- Slider de imagenes -->
+
+			
 			<h2 class="fs-1 py-5">
 				Diseñamos espacios a medida <br>
 				según el estilo que te guste
@@ -55,74 +108,93 @@
 
 			<div class="grilla">
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 g-xl-5">
-				<div class="col">
-					<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
-						<a href="portfolio-item.html">
-							<img src="img/imagenes/thumbs/foto-01.jpg" class="img-fluid" alt="Diseño 1" />
-							<div class="textos">
-								<div class="titulo">Diseño Books</div>
-								<div class="subtitulo">Living</div>
-							</div>
-						</a>
+					<div class="col">
+						<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
+							<a href="portfolio-item.html">
+								<img src="img/imagenes/thumbs/foto-01.jpg" class="img-fluid" alt="Diseño 1" />
+								<div class="textos">
+									<div class="titulo">Diseño Books</div>
+									<div class="subtitulo">Living</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
-						<a href="portfolio-item.html">
-							<img src="img/imagenes/thumbs/foto-02.jpg" class="img-fluid" alt="Diseño 2" />
-							<div class="textos">
-								<div class="titulo">Diseño Clean</div>
-								<div class="subtitulo">Living</div>
-							</div>
-						</a>
+					<div class="col">
+						<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
+							<a href="portfolio-item.html">
+								<img src="img/imagenes/thumbs/foto-02.jpg" class="img-fluid" alt="Diseño 2" />
+								<div class="textos">
+									<div class="titulo">Diseño Clean</div>
+									<div class="subtitulo">Living</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
-						<a href="portfolio-item.html">
-							<img src="img/imagenes/thumbs/foto-03.jpg" class="img-fluid" alt="Diseño 3" />
-							<div class="textos">
-								<div class="titulo">Diseño Minimalista</div>
-								<div class="subtitulo">Comedor</div>
-							</div>
-						</a>
+					<div class="col">
+						<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
+							<a href="portfolio-item.html">
+								<img src="img/imagenes/thumbs/foto-03.jpg" class="img-fluid" alt="Diseño 3" />
+								<div class="textos">
+									<div class="titulo">Diseño Minimalista</div>
+									<div class="subtitulo">Comedor</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
-						<a href="portfolio-item.html">
-							<img src="img/imagenes/thumbs/foto-04.jpg" class="img-fluid" alt="Diseño 4" />
-							<div class="textos">
-								<div class="titulo">Diseño Escalera</div>
-								<div class="subtitulo">Cocina</div>
-							</div>
-						</a>
+					<div class="col">
+						<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
+							<a href="portfolio-item.html">
+								<img src="img/imagenes/thumbs/foto-04.jpg" class="img-fluid" alt="Diseño 4" />
+								<div class="textos">
+									<div class="titulo">Diseño Escalera</div>
+									<div class="subtitulo">Cocina</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
-						<a href="portfolio-item.html">
-							<img src="img/imagenes/thumbs/foto-05.jpg" class="img-fluid" alt="Diseño 5" />
-							<div class="textos">
-								<div class="titulo">Diseño Vintage</div>
-								<div class="subtitulo">Living</div>
-							</div>
-						</a>
+					<div class="col">
+						<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
+							<a href="portfolio-item.html">
+								<img src="img/imagenes/thumbs/foto-05.jpg" class="img-fluid" alt="Diseño 5" />
+								<div class="textos">
+									<div class="titulo">Diseño Vintage</div>
+									<div class="subtitulo">Living</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
-						<a href="portfolio-item.html">
-							<img src="img/imagenes/thumbs/foto-06.jpg" class="img-fluid" alt="Diseño 6" />
-							<div class="textos">
-								<div class="titulo">Diseño Plants</div>
-								<div class="subtitulo">Comedor</div>
-							</div>
-						</a>
+					<div class="col">
+						<div class="grilla-item animate__animated animate__fadeInUp animate__faster">
+							<a href="portfolio-item.html">
+								<img src="img/imagenes/thumbs/foto-06.jpg" class="img-fluid" alt="Diseño 6" />
+								<div class="textos">
+									<div class="titulo">Diseño Plants</div>
+									<div class="subtitulo">Comedor</div>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		<div class="my-5">
+			<div class="p-5 text-center text-white bg-dark rounded-5 jumbotron">
+				<img src="img/logo.svg" alt="CoderFolio" class="col-lg-3 col-md-4 col-sm-6 col-xs-6 py-5" />
+				<h1 class="text-white">¡Queremos escucharte!</h1>
+				<p class="col-lg-8 mx-auto fs-5">
+					¿Tenés dudas, o querés hablar con nosotros? Estamos ansiosos por charlar con vos...
+				</p>
+				<div class="d-inline-flex gap-2 mb-5">
+					<a class="btn btn-base btn-light px-4" href="contacto.html">
+						Escribínos
+					</a>
+					<a class="btn btn-base btn-outline-light px-4" href="portfolio.html">
+						Mirá más
+					</a>
+				</div>
+			</div>
+		</div>
 
 		<footer class="pie-de-pagina">
 			<p class="creador">Creado por Matías Quiroga @ 2023</p>

@@ -28,6 +28,31 @@ h1, h2 {
 	padding: 14px 26px;
 	letter-spacing: 1px;
 	border-radius: 0;
+	text-transform: uppercase;
+}
+.btn.btn-base {
+	line-height: 1.5;
+	padding: 14px 26px;
+	letter-spacing: 1px;
+	border-radius: 0;
+	text-transform: uppercase;
+}
+
+/* slider */
+#sliderPrincipal {
+	h5, p {
+		text-shadow: 0 0 10px black;
+	}
+	button {
+		filter: drop-shadow( 0 0 5px black);
+	}
+} 
+
+/* jumbotron */
+.jumbotron {
+	img {
+		filter: invert(1);
+	}
 }
 
 /* posicionamiento label en grillas */
